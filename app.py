@@ -15,7 +15,7 @@ model = ChatGroq(model="gemma2-9b-it", groq_api_key=groq_api_key)
 parser = StrOutputParser()
 
 template = ChatPromptTemplate.from_messages([
-    ("system", "You are an expert in business knowledge. Give all the answers accurately and in around 30 words."),
+    ("system", "You are an expert in business knowledge. Give all the answers accurately and in around 100 words."),
     ("user", "Question:{question}")
 ])
 
